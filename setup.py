@@ -9,10 +9,10 @@ setuptools.setup(
     author="R Hooper",
     author_email="rhooper@toybox.ca",
     description="A plugin that provides lunr index creation for the Pelican static site generator.",
-    keywords='pelican lunr search plugin',
+    keywords="pelican lunr search plugin",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    license='MIT',
+    license="MIT",
     url="https://github.com/kattni/pelican-lunr",
     project_urls={
         "Bug Tracker": "https://github.com/kattni/pelican-lunr/issues",
@@ -23,11 +23,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=['pelican_lunr'],
+    packages=["pelican_lunr"],
     python_requires=">=3.6",
-    install_requires=[
-        'beautifulsoup4',
-        'pelican>4.5.0,<5',
-        'lunr'
-    ]
+    install_requires=["beautifulsoup4", "pelican>4.5.0,<5", "lunr"],
 )

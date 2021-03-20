@@ -2,10 +2,7 @@
 
 """Basic test for pelican_lunr package."""
 
-import pytest
 
-
-class TestPelicanLunr:
-    def test_import(self):
-        import pelican_lunr
-
+def test_import():
+    """Check that pelican_lunr imports"""
+    import pelican_lunr  # pylint: disable=unused-import,import-outside-toplevel
