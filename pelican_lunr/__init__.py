@@ -16,6 +16,7 @@ class LunrGenerator(generators.ArticlesGenerator):
     """
     Lunr Index generator.
     """
+
     def generate_context(self):
         """
         Adds document and index data to the context.
@@ -51,11 +52,11 @@ class LunrGenerator(generators.ArticlesGenerator):
         writer.write_js(self.settings["LUNR_INDEX_FILE"], self.context, self.context)
 
 
-
 class LunrWriter(writers.Writer):
     """
     Generate a serialized Lunr index and document hit metadata.
     """
+
     def write_js(self, name, context, override_output=False):
         """Render the template and write the file.
 

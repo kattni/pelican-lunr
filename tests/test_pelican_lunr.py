@@ -2,7 +2,9 @@
 
 """Basic test for pelican_lunr package."""
 
+import pelican_lunr
+
 
 def test_import():
     """Check that pelican_lunr imports"""
-    import pelican_lunr  # pylint: disable=unused-import,import-outside-toplevel
+    _ = pelican_lunr.LunrWriter
