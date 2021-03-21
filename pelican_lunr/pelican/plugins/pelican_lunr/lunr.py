@@ -5,7 +5,7 @@ import json
 import os
 
 from bs4 import BeautifulSoup
-from lunr import lunr
+from pelican_lunr.pelican.plugins.pelican_lunr.lunr import lunr
 from pelican import generators, logger, writers
 from pelican.contents import Article
 from pelican.plugins import signals

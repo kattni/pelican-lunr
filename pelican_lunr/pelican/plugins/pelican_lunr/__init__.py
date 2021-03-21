@@ -1,0 +1,1 @@
+from .lunr import *  # NOQA
