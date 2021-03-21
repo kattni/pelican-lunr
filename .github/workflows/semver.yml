@@ -2,12 +2,9 @@ name: Semantic Release
 
 on:
   workflow_run:
-    workflows:
-      - ["Super-Linter"]
-    branches:
-      - main
-    types:
-      - completed
+    workflows: ["Super-Linter"]
+    branches: [main]
+    types: [completed]
 
 jobs:
   release:
