@@ -6,7 +6,7 @@ import os
 
 from bs4 import BeautifulSoup
 from lunr import lunr
-from pelican import generators, writers, logger
+from pelican import generators, logger, writers
 from pelican.contents import Article
 from pelican.plugins import signals
 from pelican.utils import is_selected_for_writing, sanitised_join
