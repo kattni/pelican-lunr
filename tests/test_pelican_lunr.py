@@ -2,10 +2,9 @@
 
 """Basic test for pelican_lunr package."""
 
-import pytest
+import pelican_lunr
 
 
-class TestPelicanLunr:
-    def test_import(self):
-        import pelican_lunr
-
+def test_import():
+    """Check that pelican_lunr imports"""
+    _ = pelican_lunr.LunrWriter
