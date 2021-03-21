@@ -1,15 +1,19 @@
 name: Semantic Release
 
 on:
-  push:
+  workflow_run:
+    workflows:
+      - ["Super-Linter"]
     branches:
       - main
+    types:
+      - completed
 
 jobs:
   release:
     needs: super-lint
     runs-on: ubuntu-latest
-
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
     - uses: actions/checkout@v2
       with:
