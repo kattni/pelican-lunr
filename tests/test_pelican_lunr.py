@@ -1,10 +1,14 @@
 #!/usr/bin/env python
 
-"""Basic test for pelican_lunr package."""
+"""
+Simple tests for pelican_lunr plugin.
+"""
 
-import pelican_lunr
+import pelican.plugins.pelican_lunr
 
 
-def test_import():
-    """Check that pelican_lunr imports"""
-    _ = pelican_lunr.LunrWriter
+def test_lunr():
+    """
+    Ensure pelican-pelican_lunr plugin is loadable.
+    """
+    dir(pelican.plugins.pelican_lunr)
