@@ -4,11 +4,11 @@
 Simple tests for pelican_lunr plugin.
 """
 
-from pelican.plugins.pelican_lunr import pelican_lunr
+import pelican.plugins.pelican_lunr
 
 
 def test_lunr():
     """
     Ensure pelican-pelican_lunr plugin is loadable.
     """
-    dir(lunr)
+    dir(pelican.plugins.pelican_lunr)
