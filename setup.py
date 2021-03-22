@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pelican-lunr",
+    name="pelican-pelican_lunr",
     version=__version__,
     author="R Hooper",
     author_email="rhooper@toybox.ca",
-    description="A plugin that provides lunr index creation for the Pelican static site generator.",
-    keywords="pelican lunr search plugin",
+    description="A plugin that provides pelican_lunr index creation for the Pelican static site generator.",
+    keywords="pelican pelican_lunr search plugin",
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="MIT",
@@ -25,7 +25,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=["pelican.plugins.lunr"],
+    packages=["pelican.plugins.pelican_lunr"],
     python_requires=">=3.6",
-    install_requires=["beautifulsoup4", "pelican>4.5.0,<5", "lunr"],
+    install_requires=["beautifulsoup4", "pelican>4.5.0,<5", "pelican_lunr"],
 )
