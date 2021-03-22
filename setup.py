@@ -25,7 +25,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=["pelican_lunr"],
+    packages=["pelican.plugins.lunr"],
     python_requires=">=3.6",
     install_requires=["beautifulsoup4", "pelican>4.5.0,<5", "lunr"],
 )
