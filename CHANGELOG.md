@@ -2,6 +2,8 @@
 
 <!--next-version-placeholder-->
 
+<!-- markdownlint-disable headings -->
+
 ## v0.2.4 (2021-03-22)
 ### Fix
 * Fix test import ([`ac734d9`](https://github.com/kattni/pelican-lunr/commit/ac734d9444917c6c3207adbc2b757ed92ecfc30f))
